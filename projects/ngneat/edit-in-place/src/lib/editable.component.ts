@@ -22,12 +22,11 @@ import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
 import { AsyncPipe, NgTemplateOutlet } from '@angular/common';
 
 @Component({
-  selector: 'editable',
-  template: ` <ng-container *ngTemplateOutlet="editMode() ? editModeTpl.tpl : viewModeTpl.tpl"></ng-container> `,
-  styles: [':host {cursor: pointer;}'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [AsyncPipe, NgTemplateOutlet],
+    selector: 'editable',
+    template: ` <ng-container *ngTemplateOutlet="editMode() ? editModeTpl.tpl : viewModeTpl.tpl"></ng-container> `,
+    styles: [':host {cursor: pointer;}'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [AsyncPipe, NgTemplateOutlet]
 })
 export class EditableComponent implements OnDestroy {
   #el = inject(ElementRef);

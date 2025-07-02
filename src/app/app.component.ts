@@ -32,27 +32,26 @@ interface Account {
 type Accounts = Array<Account>;
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  standalone: true,
-  imports: [
-    EditableGroupDirective,
-    NgIf,
-    ReactiveFormsModule,
-    EditableGroupSaveDirective,
-    EditableGroupEditDirective,
-    EditableGroupCancelDirective,
-    EditableComponent,
-    ViewModeDirective,
-    EditModeDirective,
-    NgForOf,
-    EditableSaveDirective,
-    EditableCancelDirective,
-    EditableOnEnterDirective,
-    EditableOnEscapeDirective,
-    EditableFocusDirective,
-  ],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    imports: [
+        EditableGroupDirective,
+        NgIf,
+        ReactiveFormsModule,
+        EditableGroupSaveDirective,
+        EditableGroupEditDirective,
+        EditableGroupCancelDirective,
+        EditableComponent,
+        ViewModeDirective,
+        EditModeDirective,
+        NgForOf,
+        EditableSaveDirective,
+        EditableCancelDirective,
+        EditableOnEnterDirective,
+        EditableOnEscapeDirective,
+        EditableFocusDirective,
+    ]
 })
 export class AppComponent implements OnInit {
   public openBindingEvent: TriggerEvents = 'dblclick';
