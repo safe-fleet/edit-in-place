@@ -1,33 +1,21 @@
 {
-  "name": "@ngneat/edit-in-place",
-  "version": "1.9.0",
-  "description": "A flexible and unopinionated edit in place library for Angular applications",
-  "schematics": "./schematics/collection.json",
-  "peerDependencies": {
-    "@angular/common": ">=16.0.0",
-    "@angular/core": ">=16.0.0"
+  "name": "@safe-fleet/edit-in-place",
+  "version": "0.0.0-development",
+  "description": "SafeFleet edit-in-place",
+  "homepage": "https://github.com/safe-fleet/edit-in-place#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safe-fleet/edit-in-place.git"
+  },
+  "bugs": {
+    "url": "https://safefleet.atlassian.net/browse"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": ">=2"
   },
-  "keywords": [
-    "angular",
-    "angular reactive forms",
-    "reactive forms",
-    "edit-in-place",
-    "edit on click"
-  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "bugs": {
-    "url": "https://github.com/ngneat/edit-in-place/issue"
-  },
-  "homepage": "https://github.com/ngneat/edit-in-place#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngneat/edit-in-place"
   },
   "author": {
     "name": "Gérôme Grignon",
