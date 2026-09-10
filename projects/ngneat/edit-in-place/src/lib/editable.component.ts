@@ -19,14 +19,14 @@ import { EditModeDirective } from './directives/edit-mode.directive';
 import { EDITABLE_CONFIG } from './editable.config';
 import { Mode } from './mode';
 import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
-import { AsyncPipe, NgTemplateOutlet } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 
 @Component({
     selector: 'editable',
     template: ` <ng-container *ngTemplateOutlet="editMode() ? editModeTpl.tpl : viewModeTpl.tpl"></ng-container> `,
     styles: [':host {cursor: pointer;}'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [AsyncPipe, NgTemplateOutlet]
+    imports: [NgTemplateOutlet]
 })
 export class EditableComponent implements OnDestroy {
   #el = inject(ElementRef);
