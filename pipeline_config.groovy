@@ -16,7 +16,7 @@ libraries {
   }
 
   nodejs {
-    build_image = 'node:20-alpine'
+    build_image = 'node:24-alpine'
 
     build {
       commands = 'npm ci,npm run build:lib'
